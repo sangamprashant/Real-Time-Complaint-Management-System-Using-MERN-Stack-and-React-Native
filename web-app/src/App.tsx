@@ -1,13 +1,31 @@
 import { useState } from 'react';
 import { Landing, Navbar, PageLoading } from './components';
+import Footer from './components/HOME/Footer';
+import { Route, Routes } from 'react-router-dom';
+import { Dashboard, Login, Register } from './pages';
 
 const App = () => {
+
+  const [isAuthenticated] = useState(!false);
+
   return (
     <AppWrapper>
-      <>
-        <Navbar />
-        <Landing />
-      </>
+      {isAuthenticated
+        ?
+        <>
+          <Dashboard />
+        </>
+        :
+        <>
+          <Navbar />
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="*" element={<Landing />} />
+          </Routes>
+          <Footer />
+        </>
+      }
     </AppWrapper>
   )
 }

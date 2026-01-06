@@ -17,3 +17,8 @@
 .text-secondary {
   color: var(--secondary-color);
 }
+
+
+.sidebar-link {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg text-gray-700 hover:bg-blue-50 hover:text-[#2563eb] transition;
+}
