@@ -31,7 +31,7 @@ const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-50 flex">
+    <div className="min-h-screen bg-linear-to-r from-gray-100 to-gray-50 flex">
 
       {/* Sidebar */}
       <Sidebar open={sidebarOpen} onClose={() => setSidebarOpen(false)} />
@@ -79,7 +79,7 @@ const Dashboard = () => {
                 className="relative overflow-hidden rounded-2xl bg-white shadow-lg p-6"
               >
                 <div
-                  className={`absolute inset-0 bg-gradient-to-r ${stat.color} opacity-10`}
+                  className={`absolute inset-0 bg-linear-to-r ${stat.color} opacity-10`}
                 ></div>
 
                 <div className="relative flex items-center justify-between">
@@ -91,7 +91,7 @@ const Dashboard = () => {
                   </div>
 
                   <div
-                    className={`w-12 h-12 flex items-center justify-center rounded-xl bg-gradient-to-r ${stat.color} text-white`}
+                    className={`w-12 h-12 flex items-center justify-center rounded-xl bg-linear-to-r ${stat.color} text-white`}
                   >
                     {stat.icon}
                   </div>
