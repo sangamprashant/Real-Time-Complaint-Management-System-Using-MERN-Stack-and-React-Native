@@ -1,7 +1,16 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from "react-native";
 import React from "react";
+import { useRouter } from "expo-router";
 
 const Login = () => {
+
+  const router = useRouter();
+
+  const handleLogin = () => {
+    // Handle login logic here
+    router.replace("/(home)/home");
+  }
+
   return (
     <View style={styles.container}>
 
@@ -25,7 +34,7 @@ const Login = () => {
       />
 
       {/* Button */}
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Login</Text>
       </TouchableOpacity>
 
