@@ -6,7 +6,7 @@ import { Dashboard, Login, Register } from './pages';
 
 const App = () => {
 
-  const [isAuthenticated] = useState(!false);
+  const [isAuthenticated] = useState(false);
 
   return (
     <AppWrapper>
@@ -35,7 +35,7 @@ export default App
 const AppWrapper = ({ children }: { children: React.ReactNode }) => {
   const [loading] = useState(false);
   return (
-    <main className=''>
+    <main className='bg-gray-100'>
       {loading && <PageLoading />}
       <div className='fixed w-full h-full z-40 overflow-auto'>
         {children}

@@ -7,7 +7,7 @@ import ShieldOutlinedIcon from "@mui/icons-material/ShieldOutlined";
 
 const FeaturesSection = () => {
   return (
-    <section className="bg-white py-24">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}

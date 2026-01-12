@@ -1,6 +1,7 @@
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import AdminPanelSettingsOutlinedIcon from "@mui/icons-material/AdminPanelSettingsOutlined";
 import SupportAgentOutlinedIcon from "@mui/icons-material/SupportAgentOutlined";
+import type { JSX } from "react";
 
 type UserRole = {
   title: string;
@@ -36,7 +37,7 @@ const roles: UserRole[] = [
 
 const UserRoles = () => {
   return (
-    <section className="bg-white py-24">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}

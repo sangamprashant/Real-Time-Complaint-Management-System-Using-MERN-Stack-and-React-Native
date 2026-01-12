@@ -5,7 +5,7 @@ import CheckCircleOutlineOutlinedIcon from "@mui/icons-material/CheckCircleOutli
 
 const HowItWorks = () => {
   return (
-    <section className="bg-gray-50 py-24">
+    <section className="py-24">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Heading */}
